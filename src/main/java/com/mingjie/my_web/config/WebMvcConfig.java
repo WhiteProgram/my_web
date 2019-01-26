@@ -16,7 +16,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public FilterRegistrationBean corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowCredentials(true);   config.addAllowedOrigin("*");
+        config.setAllowCredentials(true);
+        config.addAllowedOrigin("*");
         config.addAllowedOrigin("null");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
